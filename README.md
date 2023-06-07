@@ -7,7 +7,7 @@ This is a solution to Hangman from The Self-Taught Programmer by Cory Althoff.
 - [Title](#title)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
     - [Link](#link)
     - [Game Rules](#game-rules)
   - [My process](#my-process)
@@ -20,7 +20,7 @@ This is a solution to Hangman from The Self-Taught Programmer by Cory Althoff.
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
 Sample Winning Game:
 ![Hangman Winning Game](hangman_winning_game.png "sample winning game of Hangman")
