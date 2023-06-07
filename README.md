@@ -22,7 +22,10 @@ This is a solution to Hangman from The Self-Taught Programmer by Cory Althoff.
 
 ### Screenshot
 
+Sample Winning Game:
 ![Hangman Winning Game](hangman_winning_game.png "sample winning game of Hangman")
+
+Sample Losing Game:
 ![Hangman Losing Game](hangman_losing_game.png "sample losing game of Hangman")
 
 ### Link
