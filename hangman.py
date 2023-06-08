@@ -8,45 +8,45 @@ def hangman():
     word = word_list[random_number]
     
     wrong_guesses = 0
-    stages = ['',
-             ' ________       ',
-             '|        |      ',
-             '|        0      ',
-             '|       /|\     ',
-             '|       / \     ',
-             '|               '
-              ]
+    hangman_drawing_stages = ['',
+                              ' ________       ',
+                              '|        |      ',
+                              '|        0      ',
+                              '|       /|\     ',
+                              '|       / \     ',
+                              '|               '
+                             ]
     
     remaining_letters = list(word)
-    board = ['__'] * len(word)
+    letter_board = ['__'] * len(word)
     win = False
     print("Welcome to Hangman")
 
-    while wrong_guesses < len(stages) - 1:
+    while wrong_guesses < len(hangman_drawing_stages) - 1:
         print('\n')
         message = 'Guess a letter: '
         guess = input(message)
         
         if guess in remaining_letters:
             character_index = remaining_letters.index(guess)
-            board[character_index] = guess
+            letter_board[character_index] = guess
             remaining_letters[character_index] = '$'
         else:
             wrong_guesses += 1
 
-        print((' '.join(board)))
+        print((' '.join(letter_board)))
         slice_end = wrong_guesses + 1
-        print('\n'.join(stages[0: slice_end]))
+        print('\n'.join(hangman_drawing_stages[0: slice_end]))
 
-        if '__' not in board:
+        if '__' not in letter_board:
             print('\n')
             print('You win!')
-            print(' '.join(board))
+            print(' '.join(letter_board))
             win = True
             break
         
     if not win:
-        print('\n'.join(stages[0: slice_end]))
+        print('\n'.join(hangman_drawing_stages[0: slice_end]))
         print('\n')
         print('You lose! It was {}.'.format(word))
 
