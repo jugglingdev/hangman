@@ -8,13 +8,13 @@ def hangman():
     word = word_list[random_number]
     
     wrong_guesses = 0
-    stages = ["",
-             " ________        ",
-             "|        |      ",
-             "|        0      ",
-             "|       /|\     ",
-             "|       / \     ",
-             "|               "
+    stages = ['',
+             ' ________       ',
+             '|        |      ',
+             '|        0      ',
+             '|       /|\     ',
+             '|       / \     ',
+             '|               '
               ]
     
     remaining_letters = list(word)
@@ -46,7 +46,7 @@ def hangman():
             break
         
     if not win:
-        print('\n'.join(stages[0: wrong_guesses]))
+        print('\n'.join(stages[0: slice_end]))
         print('\n')
         print('You lose! It was {}.'.format(word))
 
