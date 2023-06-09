@@ -2,9 +2,13 @@ import random
 
 def hangman():
 
-    word_list = ['happy', 'cat', 'python', 'java', 'javascript', 'hacker', 'painter', 'computer', 'developer', 'software', 'umbrella', 'music', 'juggling', 'skating', 'spelunking', 'outside', 'spring', 'coding', 'fun']
-    list_length = len(word_list) - 1
-    random_number = random.randint(0, list_length)
+    word_list = ['happy', 'cat', 'python', 'java', 'javascript', 
+                 'hacker', 'painter', 'computer', 'developer', 
+                 'software', 'umbrella', 'music', 'juggling', 
+                 'skating', 'spelunking', 'outside', 'spring', 
+                 'coding', 'fun']
+    word_list_length = len(word_list) - 1
+    random_number = random.randint(0, word_list_length)
     word = word_list[random_number]
     
     wrong_guesses = 0
